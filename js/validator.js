@@ -179,7 +179,7 @@
       var $feedback = $group.find('.form-control-feedback')
       var errors = $el.data('bs.validator.errors')
 
-      if (!errors.length) return
+      if (!errors || !errors.length) return
 
       errors = $('<ul/>')
         .addClass('list-unstyled')
